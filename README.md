@@ -1,38 +1,40 @@
 # WebdriverIO
 Based on WebdriverIO Tutorials by Raghav Pal 
+
 https://www.youtube.com/playlist?list=PLhW3qG5bs-L9K2xtu-04jZFqykzXzqJW8
 
-**Project Setup & WebdriverIO Installation**
+
+### Project Setup & WebdriverIO Installation
 
 Step 1 - Create a new folder and open in IDE (VS Code)
 
-Step 2 - Open terminal in VS Code and run commands  	```npm init -y```
-											   	```npm init wdio```
+Step 2 - Open terminal in VS Code and run commands  	**`npm init -y`**  and  **`npm init wdio`**
                           
 Step 3 - Select the options as required and install
 
-Step 4 - Check WebdriverIO version 					```npm ls webdriverio```
+Step 4 - Check WebdriverIO version 					**`npm ls webdriverio`**
 
 Step 5 - Check wdio.conf.js file and project folders are created
 
 Step 6 - To run existing tests
 
-Run all tests in the folder configured in wdio.conf.js 	```npx wdio run wdio.conf.js```
+Run all tests in the folder configured in wdio.conf.js 	**`npx wdio run wdio.conf.js`**
 
 or
 
-```npm run wdio```
+**`npm run wdio`**
 
-Run specific tests	 ```npx wdio run wdio.conf.js --spec test1.js```
+Run specific tests	 **`npx wdio run wdio.conf.js --spec test1.js`**
 
 
 
-**How to create Tests**
+### How to create Tests
 
 Step 1 - Create a new file under spec folder
 
 Step 2 - Add the test script using it block (mocha)	
 
+***
 ```
 describe('Demo Tests', () => {
    it('My 1st Test', async () => {
@@ -44,6 +46,7 @@ describe('Demo Tests', () => {
    })
 })
 ```
+***
 
 $()   Single dollar sign to find a single web element
 
@@ -51,10 +54,9 @@ $$() Double dollar sign to find multiple web elements
 
 
 
+### How to Generate and View Reports
 
-**How to Generate and View Reports**
-
-Step 1 - Run - ```npm install @wdio/allure-reporter --save-dev```
+Step 1 - Run - **`npm install @wdio/allure-reporter --save-dev`**
 
 Step 2 - Add reporter config in wdio.conf.js
 
@@ -63,15 +65,14 @@ Step 3 - Run test and check Allure Results folder is generated
 Step 4 - Install allure command line tool  npm install -g allure-commandline --save-dev
 
 Step 5 - Run commands
-		```allure generate allure-results```	// this will generate allure-report folder
-		```allure open```				// will start server and open report
+		**`allure generate allure-results`**	// this will generate allure-report folder
+		**`allure open`**			// will start server and open report
 
 Refer - https://webdriver.io/docs/allure-reporter/
 
 
 
-
-**How to RECORD WebdriverIO Test**
+### How to RECORD WebdriverIO Test
 
 Chrome DevTools Recorder - If you are using latest chrome  you will have the Recorder already installed and available   This feature is available only in Chrome, not Chromium
 
@@ -94,4 +95,9 @@ Step 6 - Can import | export steps
 
 Step 7 - Can export for different tools using their chrome plugins - https://goo.gle/recorder-extension  e.g. 
 Cypress Chrome Recorder  |  Nightwatch Chrome Recorder  |  Webdriver IO Chrome Recorder
+
+#### Never Stop Learning
+***Raghav Pal***
+
+***https://automationstepbystep.com/***
 
